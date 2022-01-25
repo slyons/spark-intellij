@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="spark-intellij" />
+    <profile name="sbt 1" modules="spark-intellij_4774" />
+    <profile name="sbt 2" modules="spark-intellij">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+      <parameters>
+        <parameter value="-target:1.8" />
+        <parameter value="-Xlog-reflective-calls" />
+        <parameter value="-Xlint" />
+        <parameter value="-Wconf:cat=other-match-analysis:error" />
+      </parameters>
+    </profile>
   </component>
 </project>
